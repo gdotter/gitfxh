@@ -1,0 +1,16 @@
+{
+  "icon" : "icon.png",
+  "subType" : "customapp",
+  "description" : "This app is created from Studio App FedExSTAT.\r\n",
+  "version" : "1.0",
+  "intSvcs" : [ {
+    "name" : "FedExBEACON",
+    "version" : "1.0",
+    "etag" : "baf4cc7b-63ad-4558-bb5f-994ed0f3f36a"
+  } ],
+  "objectSvcs" : [ {
+    "name" : "FedExSOAP",
+    "version" : "1.0",
+    "etag" : "e4990a78-fc59-40db-9710-68907162c3c1"
+  } ]
+}
