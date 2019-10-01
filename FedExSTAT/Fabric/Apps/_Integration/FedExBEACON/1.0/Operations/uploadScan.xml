@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service serviceGroup="" cachable="false" cacheduration="" description="" endpoint="default" groupType="" id="uploadScan" passwordencrypted="false" security="authorized_app" type="soapserviceConnector" smscode="" smsenabled="false">
+    <service-config>
+        <config-param api-version="" appid="" name="preprocessorname" value=""/>
+        <config-param api-version="" appid="" name="postprocessorname" value=""/>
+        <config-param api-version="" appid="" name="preprocessorJS" value=""/>
+        <config-param api-version="" appid="" name="postprocessorJS" value="function passthruLocalKey() &#xA;{&#xA;    logger.debug('Testing passing key.');&#xA;    var localKeyVal = request.getParameter('beaconScanId');&#xA;   &#xA;    logger.debug('Current local key: ' + localKeyVal);&#xA;  &#xA;    result.addParam(new com.konylabs.middleware.dataobject.Param('beaconScanId', localKeyVal));&#xA;}&#xA;passthruLocalKey();"/>
+        <config-param api-version="" appid="" name="preprocessorRules" value=""/>
+        <config-param api-version="" appid="" name="postprocessorRules" value=""/>
+        <config-param api-version="" appid="" name="kony_http_supported_methods" value="POST"/>
+        <config-param api-version="" appid="" name="endpointUrl" value="https://wsbeta.fedex.com:443/web-services/uploadScan"/>
+        <config-param api-version="" appid="" name="ignorehttpproxy" value="true"/>
+        <config-param api-version="" appid="" name="dataObjectName" value=""/>
+        <config-param api-version="" appid="" name="soapAction" value="/uploadScan"/>
+        <config-param api-version="" appid="" name="soap-version" value="1.1"/>
+        <config-param api-version="" appid="" name="sockettimeout" value=""/>
+        <config-param api-version="" appid="" name="responseEncoding" value="UTF-8"/>
+        <config-param api-version="" appid="" name="isembedxmlpresent" value="false"/>
+        <config-param api-version="" appid="" name="retrycount" value="0"/>
+    </service-config>
+    <service-input passthrough="false">
+        <header datatype="" name="" passthrough="false"/>
+        <template-param datatype="" defaultvalue="&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:v1=&quot;http://fedex.com/ws/uploadscan/v1&quot;&gt;   &#xA;&lt;soapenv:Body&gt;&#xA;      &lt;v1:UploadScanRequest&gt;&#xA;         &lt;v1:WebAuthenticationDetail&gt;&#xA;            &lt;v1:UserCredential&gt;&#xA;               &lt;v1:Key&gt;$testKey&lt;/v1:Key&gt;&#xA;               &lt;v1:Password&gt;$testPwd&lt;/v1:Password&gt;&#xA;            &lt;/v1:UserCredential&gt;&#xA;         &lt;/v1:WebAuthenticationDetail&gt;&#xA;         &lt;v1:Version&gt;&#xA;            &lt;v1:ServiceId&gt;uploadscanservice&lt;/v1:ServiceId&gt;&#xA;            &lt;v1:Major&gt;1&lt;/v1:Major&gt;&#xA;            &lt;v1:Intermediate&gt;0&lt;/v1:Intermediate&gt;&#xA;            &lt;v1:Minor&gt;0&lt;/v1:Minor&gt;&#xA;         &lt;/v1:Version&gt;&#xA;         &lt;v1:MasterList&gt;&#xA;            &lt;track-type&gt;$trackType&lt;/track-type&gt;&#xA;            &lt;track-exception-code&gt;$trackExceptionCode&lt;/track-exception-code&gt;&#xA;            &lt;track-item-number&gt;$trackItemNumber&lt;/track-item-number&gt;&#xA;            &lt;airbill-type-code&gt;$airbillTypeCode&lt;/airbill-type-code&gt;&#xA;            &lt;track-location-code&gt;$trackLocationCode&lt;/track-location-code&gt;&#xA;            &lt;device-id&gt;$deviceId&lt;/device-id&gt;&#xA;            &lt;track-date&gt;$trackDate&lt;/track-date&gt;&#xA;            &lt;employee-number&gt;$employeeNumber&lt;/employee-number&gt;&#xA;            &lt;track-begin-function-time&gt;$trackBeginFunctionTime&lt;/track-begin-function-time&gt;&#xA;            &lt;track-end-function-time&gt;$trackEndFunctionTime&lt;/track-end-function-time&gt;&#xA;            &lt;comment&gt;$comment&lt;/comment&gt;&#xA;         &lt;/v1:MasterList&gt;&#xA;      &lt;/v1:UploadScanRequest&gt;&#xA;   &lt;/soapenv:Body&gt;&#xA;         &lt;/soapenv:Envelope&gt; " description="" encode="false" format="" formatvalue="" name="message" order="" paramOrder="0" parentOrder="0" sms-name="" src="" sourcevalue="" srcformatvalue="" target="" targetdatatype="" value="&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:v1=&quot;http://fedex.com/ws/uploadscan/v1&quot;&gt;   &#xA;&lt;soapenv:Body&gt;&#xA;      &lt;v1:UploadScanRequest&gt;&#xA;         &lt;v1:WebAuthenticationDetail&gt;&#xA;            &lt;v1:UserCredential&gt;&#xA;               &lt;v1:Key&gt;$testKey&lt;/v1:Key&gt;&#xA;               &lt;v1:Password&gt;$testPwd&lt;/v1:Password&gt;&#xA;            &lt;/v1:UserCredential&gt;&#xA;         &lt;/v1:WebAuthenticationDetail&gt;&#xA;         &lt;v1:Version&gt;&#xA;            &lt;v1:ServiceId&gt;uploadscanservice&lt;/v1:ServiceId&gt;&#xA;            &lt;v1:Major&gt;1&lt;/v1:Major&gt;&#xA;            &lt;v1:Intermediate&gt;0&lt;/v1:Intermediate&gt;&#xA;            &lt;v1:Minor&gt;0&lt;/v1:Minor&gt;&#xA;         &lt;/v1:Version&gt;&#xA;         &lt;v1:MasterList&gt;&#xA;            &lt;track-type&gt;$trackType&lt;/track-type&gt;&#xA;            &lt;track-exception-code&gt;$trackExceptionCode&lt;/track-exception-code&gt;&#xA;            &lt;track-item-number&gt;$trackItemNumber&lt;/track-item-number&gt;&#xA;            &lt;airbill-type-code&gt;$airbillTypeCode&lt;/airbill-type-code&gt;&#xA;            &lt;track-location-code&gt;$trackLocationCode&lt;/track-location-code&gt;&#xA;            &lt;device-id&gt;$deviceId&lt;/device-id&gt;&#xA;            &lt;track-date&gt;$trackDate&lt;/track-date&gt;&#xA;            &lt;employee-number&gt;$employeeNumber&lt;/employee-number&gt;&#xA;            &lt;track-begin-function-time&gt;$trackBeginFunctionTime&lt;/track-begin-function-time&gt;&#xA;            &lt;track-end-function-time&gt;$trackEndFunctionTime&lt;/track-end-function-time&gt;&#xA;            &lt;comment&gt;$comment&lt;/comment&gt;&#xA;         &lt;/v1:MasterList&gt;&#xA;      &lt;/v1:UploadScanRequest&gt;&#xA;   &lt;/soapenv:Body&gt;&#xA;         &lt;/soapenv:Envelope&gt; ">
+            <accessType></accessType>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="testKey" order="" paramOrder="1" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="tyEMzzkW9tgmKtUp" value="">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="testPwd" order="" paramOrder="2" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="u5mH3YhoguMaje7By2hZneRlL" value="">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="trackType" order="" paramOrder="3" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="07" value="">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="trackExceptionCode" order="" paramOrder="4" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="56" value="">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="trackItemNumber" order="" paramOrder="5" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="813363217864" value="">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="airbillTypeCode" order="" paramOrder="6" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="1" value="">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="deviceId" order="" paramOrder="7" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="SNKONYTEST" value="">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="trackDate" order="" paramOrder="8" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="20190702" value="">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="trackLocationCode" order="" paramOrder="9" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="SINA" value="">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="trackBeginFunctionTime" order="" paramOrder="10" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="1051" value="">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="trackEndFunctionTime" order="" paramOrder="11" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="1051" value="">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="employeeNumber" order="" paramOrder="12" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="79069" value="">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="airbillTime" order="" paramOrder="13" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="1046" value="">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="comment" order="" paramOrder="14" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="-9" value="">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="beaconScanId" order="" paramOrder="15" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="-97" value="">
+                <accessType></accessType>
+            </param>
+        </template-param>
+        <stub-param value=""/>
+    </service-input>
+    <service-output passthrough="false">
+        <dataset id="MessageParameters" order="" paramOrder="8" parentOrder="0" src="//ns0:Notifications">
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="MessageId" order="" paramOrder="9" parentOrder="8" passnull="false" sms-name="" src="ns0:MessageParameters/ns0:Id" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="MessageValue" order="" paramOrder="10" parentOrder="8" passnull="false" sms-name="" src="ns0:MessageParameters/ns0:Value" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+                <accessType></accessType>
+            </param>
+        </dataset>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="HighestSeverity" order="" paramOrder="1" parentOrder="0" passnull="false" sms-name="" src="//ns0:HighestSeverity" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="beaconScanId" order="" paramOrder="11" parentOrder="0" passnull="false" sms-name="" src="" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+            <accessType></accessType>
+        </param>
+        <record id="Notifications" order="" paramOrder="2" parentOrder="0" src="//ns0:Notifications">
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="Severity" order="" paramOrder="3" parentOrder="2" passnull="false" sms-name="" src="ns0:Severity" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="Source" order="" paramOrder="4" parentOrder="2" passnull="false" sms-name="" src="ns0:Source" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="Code" order="" paramOrder="5" parentOrder="2" passnull="false" sms-name="" src="ns0:Code" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="Message" order="" paramOrder="6" parentOrder="2" passnull="false" sms-name="" src="ns0:Message" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="LocalizedMessage" order="" paramOrder="7" parentOrder="2" passnull="false" sms-name="" src="ns0:LocalizedMessage" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+                <accessType></accessType>
+            </param>
+        </record>
+    </service-output>
+</service>

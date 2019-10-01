@@ -1,0 +1,21 @@
+{
+    "AS_UWI_c9a099f5d3f04d4e9af012977259e86a": {
+        "id": "AS_UWI_c9a099f5d3f04d4e9af012977259e86a",
+        "type": "ACTION_SEQUENCE",
+        "params": [],
+        "contextObj": {
+            "name": "frmHome",
+            "type": "forms",
+            "platform": "",
+            "KUID": "i432b2c6062548b080b16513c33e219b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__faea9a12e269425dae36e7d1c4b14d67",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.view.fedexSTATScanInterfacePanel.isScanEnabled = false;",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

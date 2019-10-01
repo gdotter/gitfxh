@@ -1,0 +1,35 @@
+{
+  "operationConfig" : {
+    "name" : "uploadScan7437",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "authorized_app",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "iMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\"><map inputpath=\"request_in\" outputpath=\"request_out\"><set-param inputpath=\"trackDate\" outputpath=\"trackDate\"/><set-param inputpath=\"trackEndFunctionTime\" outputpath=\"trackEndFunctionTime\"/><set-param inputpath=\"trackExceptionCode\" outputpath=\"trackExceptionCode\"/><set-param inputpath=\"trackType\" outputpath=\"trackType\"/><set-param inputpath=\"beaconScanId\" outputpath=\"beaconScanId\"/><set-param inputpath=\"airbillTypeCode\" outputpath=\"airbillTypeCode\"/><set-param inputpath=\"trackItemNumber\" outputpath=\"trackItemNumber\"/><set-param inputpath=\"deviceId\" outputpath=\"deviceId\"/><set-param inputpath=\"trackLocationCode\" outputpath=\"trackLocationCode\"/><set-param inputpath=\"employeeNumber\" outputpath=\"employeeNumber\"/><set-param inputpath=\"airbillTime\" outputpath=\"airbillTime\"/><set-param inputpath=\"comment\" outputpath=\"comment\"/><set-param inputpath=\"testKey\" outputpath=\"testKey\"/><set-param inputpath=\"testPwd\" outputpath=\"testPwd\"/><set-param inputpath=\"trackBeginFunctionTime\" outputpath=\"trackBeginFunctionTime\"/></map></mapper>",
+    "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<mapper xmlns=\"http://www.kony.com/ns/mapper\">\n    <map inputpath=\"response_in\" outputpath=\"response_out\">\n        <map inputpath=\"\" outputpath=\"BeaconScan\">\n            <set-param inputpath=\"beaconScanId\" outputpath=\"beaconScanId\"/>\n            <set-param inputpath=\"HighestSeverity\" outputpath=\"HighestSeverity\"/>\n        </map>\n    </map>\n</mapper>\n",
+    "oVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"response_out\",\"text\":\"BeaconScan\",\"xy\":\"770 100\",\"__gohashid\":25501},{\"isGroup\":true,\"key\":\"response_in\",\"text\":\"FedExBEACON (1.0).uploadScan\",\"xy\":\"150 100\",\"__gohashid\":25502}],\"linkDataArray\":[{\"category\":\"Mapping\",\"visible\":true,\"__gohashid\":30571,\"from\":\"source:beaconScanId:\",\"to\":\"target:BeaconScan:beaconScanId:\",\"fromPort\":\"source:beaconScanId:\",\"toPort\":\"target:BeaconScan:beaconScanId:\"},{\"category\":\"Mapping\",\"visible\":true,\"__gohashid\":30856,\"from\":\"source:HighestSeverity:\",\"to\":\"target:BeaconScan:HighestSeverity:\",\"fromPort\":\"source:HighestSeverity:\",\"toPort\":\"target:BeaconScan:HighestSeverity:\"}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":false}",
+    "applyCommonMapping" : false,
+    "applyRequestCommonMapping" : true,
+    "applyResponseCommonMapping" : false,
+    "backendMeta" : {
+      "serviceName" : "FedExBEACON",
+      "serviceVersion" : "1.0",
+      "operationName" : "uploadScan"
+    },
+    "relationshipHierarchyMapping" : {
+      "children" : [ ],
+      "name" : "BeaconScan",
+      "actions" : {
+        "create" : true,
+        "update" : true,
+        "partialupdate" : true
+      },
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : false
+  }
+}

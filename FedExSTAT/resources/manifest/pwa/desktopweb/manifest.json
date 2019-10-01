@@ -1,0 +1,44 @@
+{
+    "theme_color": "#4D148C",
+    "orientation": "any",
+    "background_color": "#4D148C",
+    "display": "standalone",
+    "name": "FedExSTAT",
+	"id": "FedExSTAT",
+    "short_name": "FedExSTAT",
+	"start_url": "/apps/FedExSTAT/",
+    "icons": [{
+    "src": "kony_48.png",
+    "sizes": "48x48",
+    "type": "image/png"
+	  }, {
+		"src": "kony_71.png",
+		"sizes": "72x72",
+		"type": "image/png"
+	  }, {
+		"src": "kony_88.png",
+		"sizes": "96x96",
+		"type": "image/png"
+	  }, {
+		"src": "kony_150.png",
+		"sizes": "144x144",
+		"type": "image/png"
+	  }, {
+		"src": "kony_180.png",
+		"sizes": "168x168",
+		"type": "image/png"
+	  }, {
+		  "src": "kony_300.png",
+		  "type": "image/png",
+		  "sizes": "192x192"
+    },
+    {
+      "src": "kony_500.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }],
+    "related_applications": [{
+        "platform": "web",
+		"url": "https://digitalsolutionslab.konycloud.com/apps/FedExSTAT/"
+    }]
+}

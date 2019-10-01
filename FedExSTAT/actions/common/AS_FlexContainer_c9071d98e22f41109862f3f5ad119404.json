@@ -1,0 +1,21 @@
+{
+    "AS_FlexContainer_c9071d98e22f41109862f3f5ad119404": {
+        "id": "AS_FlexContainer_c9071d98e22f41109862f3f5ad119404",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__onClick_ib3a40b45fd44c53880dc14a6e886f70",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "_togglePanel",
+            "display": "_togglePanel",
+            "inputparams": [],
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }]
+    }
+}

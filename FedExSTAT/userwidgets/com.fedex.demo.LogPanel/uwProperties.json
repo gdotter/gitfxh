@@ -1,0 +1,99 @@
+{
+    "classname": "LogPanel",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "Log Panel",
+                    "kuid": "f9d22f046f384eca8fa47f3c1ad44a21",
+                    "paramList": [
+                        {
+                            "name": "logData"
+                        }
+                    ],
+                    "propertyKey": "addToLog",
+                    "pw": {
+                        "displayName": "addToLog",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "f9fc185d9fc2417abf7b32a7dcb9f218",
+                    "type": "event"
+                },
+                {
+                    "group": "Log Panel",
+                    "kuid": "b54d972a284f4a3eae72fd2515768d2c",
+                    "paramList": [],
+                    "propertyKey": "clearLog",
+                    "pw": {
+                        "displayName": "clearLog",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "f9fc185d9fc2417abf7b32a7dcb9f218",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "Log Panel"
+            ],
+            "events": [
+                "Log Panel"
+            ],
+            "properties": [
+                "Log Text Area"
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "fee32b557e9f4823a9cf0b3a483ffa4b",
+                    "originalPropertyKey": "skin",
+                    "propertyIndex": 2,
+                    "propertyKey": "showHideButtonSkin",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "skin",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Show Hide Button Skin",
+                        "srcWidget": "lblShowHideBtn",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "aec897b0a1a34b41b14fd0856de84ef9"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "cacfa5f78339453c901f25f272bbf146",
+                    "originalPropertyKey": "skin",
+                    "propertyIndex": 4,
+                    "propertyKey": "logTitleSkin",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "skin",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Title Skin",
+                        "srcWidget": "lblLog",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "cbb3e811a27743a7925b13d717e1d40a"
+                }
+            ]
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.fedex.demo",
+    "version": "1.0.0"
+}

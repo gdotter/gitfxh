@@ -1,0 +1,182 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizListBox",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_bottom_": {
+        "type": "string",
+        "value": "5dp"
+    },
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        2,
+        0,
+        2,
+        0
+    ],
+    "_placeholder_": "Please Select",
+    "_skin_": "sd1884306f6243d7803e047fe82b4437",
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 4,
+    "focusskin": "s491d01d1cdf4c4e9a41604c0b3456d5",
+    "groupcells": false,
+    "id": "lbExceptionCode",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "d191c7701614439182c6cb7e2ebc778a",
+    "masterdata": [
+        [
+            "07",
+            "07 - Refused By Customer"
+        ],
+        [
+            "14",
+            "14 - Returned To Shipper"
+        ],
+        [
+            "18",
+            "18 - Missort"
+        ],
+        [
+            "19",
+            "19 - Transfer of Custodial Control"
+        ],
+        [
+            "31",
+            "31 - Arrived After Couriers Dispatched"
+        ],
+        [
+            "33",
+            "33 - Vendor Transportation Delay"
+        ],
+        [
+            "34",
+            "34 - Destroyed At Customer Request"
+        ],
+        [
+            "37",
+            "37 - Observed Package Damage"
+        ],
+        [
+            "41",
+            "41 - Commitment Not Due / Not Attempted"
+        ],
+        [
+            "42",
+            "42 - Business Closed"
+        ],
+        [
+            "44",
+            "44 - Package Movement Exception"
+        ],
+        [
+            "50",
+            "50 - Improper/Missing Regulatory Paperwork"
+        ],
+        [
+            "52",
+            "52 - Missing Regulatory Paperwork"
+        ],
+        [
+            "55",
+            "55 - Regulatory Agency Clearance Delay"
+        ],
+        [
+            "56",
+            "56 - Inbound Transfer / Missort Returned"
+        ],
+        [
+            "57",
+            "57 - Manifested But Not Received"
+        ],
+        [
+            "60",
+            "60 - Daily (Where Applicable)"
+        ],
+        [
+            "61",
+            "61 - Broker Notification"
+        ],
+        [
+            "65",
+            "65 - Commercial Customs Release"
+        ],
+        [
+            "67",
+            "67 - Released To An Agent"
+        ],
+        [
+            "68",
+            "68 - In-Country Transit"
+        ],
+        [
+            "70",
+            "70 - Transit In"
+        ],
+        [
+            "71",
+            "71 - Commercial / Dutiable Received At Port of Entry"
+        ],
+        [
+            "72",
+            "72 - Non-commercial / Non-dutiable Received At Port of Entry"
+        ],
+        [
+            "74",
+            "74 - Overage (Shipment Arrived But Not in Manifest)"
+        ],
+        [
+            "77",
+            "77 - Transit Out"
+        ],
+        [
+            "80",
+            "80 - Paperwork Available"
+        ],
+        [
+            "84",
+            "84 - Delay Caused Beyond Our Control"
+        ],
+        [
+            "91",
+            "91 - Pickup Exception - Exceeds Service Unit"
+        ]
+    ],
+    "name": "kony.ui.ListBox",
+    "onselection": "AS_ListBox_b164b9c1238a4833acd3ff39b21c7aa7",
+    "paddinginpixel": false,
+    "parent": "flxScanException",
+    "pf": "userwidgetmodel",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "selectedkeys": null,
+    "selectedkeyvalue": null,
+    "selectedkeyvalues": null,
+    "size": 18,
+    "viewconfig": {
+        "toggleViewConfig": {
+            "viewStyle": 0
+        }
+    },
+    "viewtype": 0,
+    "wType": "ListBox",
+    "zindex": 1
+}

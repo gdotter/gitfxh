@@ -1,0 +1,24 @@
+{
+    "AS_ListBox_b164b9c1238a4833acd3ff39b21c7aa7": {
+        "id": "AS_ListBox_b164b9c1238a4833acd3ff39b21c7aa7",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__onSelection_fc84119993a646bfbe007b56a9634fcd",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "_lbExceptionCode_onSelection",
+            "display": "_lbExceptionCode_onSelection",
+            "inputparams": [{
+                "name": "itemSelected",
+                "value": " eventobject"
+            }],
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }]
+    }
+}

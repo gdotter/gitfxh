@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<endpoint name="default" type="SOAP" url="https://wsbeta.fedex.com:443/web-services/uploadScan" encryptSecureInfo="false">
+    <config>
+        <entry>
+            <key>ignorehttpproxy</key>
+            <value>true</value>
+        </entry>
+        <entry>
+            <key>wsdlFileName</key>
+            <value>BEACON UploadScanService_v1.4.wsdl</value>
+        </entry>
+        <entry>
+            <key>wsdlType</key>
+            <value>file</value>
+        </entry>
+        <entry>
+            <key>wsdlurl</key>
+            <value></value>
+        </entry>
+    </config>
+    <apiThrottling/>
+    <jsonpath>false</jsonpath>
+</endpoint>

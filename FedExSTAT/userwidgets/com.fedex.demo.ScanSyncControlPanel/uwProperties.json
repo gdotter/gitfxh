@@ -1,0 +1,256 @@
+{
+    "classname": "ScanSyncControlPanel",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "d7c7e49bae0e423fb64f7c170d7d20f6",
+                    "paramList": [],
+                    "propertyKey": "resetControlPanel",
+                    "pw": {
+                        "displayName": "resetControlPanel",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "bcbb729ba5654e8f96fbcab91edab5f1",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "Scan",
+                    "kuid": "b477d54687a243b6a735baefa79e6d9c",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "onScanActivated",
+                    "pw": {
+                        "displayName": "onScanActivated",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "bcbb729ba5654e8f96fbcab91edab5f1",
+                    "type": "event"
+                },
+                {
+                    "group": "Sync",
+                    "kuid": "a4e5fd86238e431d8537020aeecfb96f",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "onSyncActivated",
+                    "pw": {
+                        "displayName": "onSyncActivated",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "bcbb729ba5654e8f96fbcab91edab5f1",
+                    "type": "event"
+                },
+                {
+                    "group": "Scan",
+                    "kuid": "b0511d4eee5444339bd704e3a6474731",
+                    "paramList": [],
+                    "propertyIndex": 2,
+                    "propertyKey": "onScanDeactivated",
+                    "pw": {
+                        "displayName": "onScanDeactivated",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "bcbb729ba5654e8f96fbcab91edab5f1",
+                    "type": "event"
+                },
+                {
+                    "group": "Sync",
+                    "kuid": "ecf8809396b14051a88088a1a9d67d77",
+                    "paramList": [],
+                    "propertyIndex": 2,
+                    "propertyKey": "onSyncDeactivated",
+                    "pw": {
+                        "displayName": "onSyncDeactivated",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "bcbb729ba5654e8f96fbcab91edab5f1",
+                    "type": "event"
+                },
+                {
+                    "group": "Scan",
+                    "kuid": "jfa9bd419cf74c6880785fd9e0f8ba00",
+                    "paramList": [],
+                    "propertyIndex": 3,
+                    "propertyKey": "onScanReceived",
+                    "pw": {
+                        "displayName": "onScanReceived",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "bcbb729ba5654e8f96fbcab91edab5f1",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [
+                "Log Panel",
+                "Scan",
+                "Sync"
+            ],
+            "properties": [
+                "Appearance"
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "General",
+                    "kuid": "aff49f93e2de4d98a716a700be0094b0",
+                    "originalPropertyKey": "logWidget",
+                    "propertyIndex": 5,
+                    "propertyKey": "logWidget",
+                    "pw": {
+                        "displayName": "Log Widget",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "bcbb729ba5654e8f96fbcab91edab5f1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Read",
+                    "defaultValue": true,
+                    "group": "General",
+                    "kuid": "ba933a61323542039478c52a38be8d59",
+                    "originalPropertyKey": "isTimerStarted",
+                    "propertyIndex": 6,
+                    "propertyKey": "isTimerStarted",
+                    "pw": {
+                        "displayName": "Timer Started",
+                        "uiRepresentation": "Label-Radiobuttongroup"
+                    },
+                    "srcWgtKUID": "bcbb729ba5654e8f96fbcab91edab5f1",
+                    "type": "boolean",
+                    "value": "true/false"
+                }
+            ],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "Appearance",
+                    "kuid": "i4b5466dc7944d9494f487633fab5fd2",
+                    "originalPropertyKey": "isVisible",
+                    "propertyIndex": 1,
+                    "propertyKey": "showScanControl",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Show Scan Control",
+                        "srcWidget": "flxScanner",
+                        "type": "boolean",
+                        "uiRepresentation": "Label-Radiobuttongroup",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "f7ce35cd2bb94823b64e3534edcc7097"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "e38dd3d2c6b8443cb25011a077f2fd74",
+                    "originalPropertyKey": "skin",
+                    "propertyIndex": 1,
+                    "propertyKey": "sknTitle",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "skin",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Title Skin",
+                        "srcWidget": "lblControlPanel",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "i8e7c8d96e694e1bbc0e6244cca789d3"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Appearance",
+                    "kuid": "e64a0e75cf9548328f098dbf91cd0f9f",
+                    "originalPropertyKey": "isVisible",
+                    "propertyIndex": 2,
+                    "propertyKey": "showSyncControl",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Show Sync Control",
+                        "srcWidget": "flxSync",
+                        "type": "boolean",
+                        "uiRepresentation": "Label-Radiobuttongroup",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "a3702c6d4bba4578957303653278d43b"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "bf0121fe14754bc5a76f035eaedbfd44",
+                    "originalPropertyKey": "skin",
+                    "propertyIndex": 2,
+                    "propertyKey": "sknButton",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "skin",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Button Skin",
+                        "srcWidget": "btnActivateScan",
+                        "wType": "Button"
+                    },
+                    "srcWgtKUID": "ff1144b484a94f8195db39a79ff22697"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "d0f0f10243d1415ca2f6c83c39b68368",
+                    "originalPropertyKey": "focusSkin",
+                    "propertyIndex": 3,
+                    "propertyKey": "sknButtonFocus",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "skin",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Button Focus Skin",
+                        "srcWidget": "btnActivateScan",
+                        "wType": "Button"
+                    },
+                    "srcWgtKUID": "ff1144b484a94f8195db39a79ff22697"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "f7a7a92df22a42b98517d89ee16982ff",
+                    "originalPropertyKey": "skin",
+                    "propertyIndex": 4,
+                    "propertyKey": "sknStatusValue",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "skin",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Status Value Skin",
+                        "srcWidget": "lblScanPowerStatus",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "j5a4b6bd88fd4e88812f36a6bab03575"
+                }
+            ]
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.fedex.demo",
+    "version": "1.0.0"
+}

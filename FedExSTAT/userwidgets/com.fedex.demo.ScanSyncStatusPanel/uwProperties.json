@@ -1,0 +1,158 @@
+{
+    "classname": "ScanSyncStatusPanel",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "a61df7c1c90444db8569290628862db6",
+                    "paramList": [],
+                    "propertyKey": "resetStatusPanel",
+                    "pw": {
+                        "displayName": "resetStatusPanel",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "b40e48ed9f994650974e5167ecc12d87",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [
+                "Appearance",
+                "Data"
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "Data",
+                    "kuid": "eba21bb5da454784b3e7cbe069a05bf9",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 1,
+                    "propertyKey": "awbNumberValue",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "AWB Number",
+                        "srcWidget": "lblAWBNumberVal",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "i74a9085057d4952bac83e3f47e98f1d"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Appearance",
+                    "kuid": "d62ad8eb9d4a4a888ce463e1acb3844c",
+                    "originalPropertyKey": "skin",
+                    "propertyIndex": 1,
+                    "propertyKey": "headerSkin",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "skin",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Normal",
+                        "srcWidget": "lblScanStatus",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "ic77701f8178424784103ec11d1588e4"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Data",
+                    "kuid": "c0016655205f4e4a9d5a7d1771454c04",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 2,
+                    "propertyKey": "scanResultValue",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Scan Result",
+                        "srcWidget": "lblScanResultVal",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "b8814503a9124134ad4a0023061b7df0"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Appearance",
+                    "kuid": "efded34a248040b4a5daefc51e0f8255",
+                    "originalPropertyKey": "skin",
+                    "propertyIndex": 2,
+                    "propertyKey": "valueSkin",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "skin",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Normal",
+                        "srcWidget": "lblAWBNumber",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "i40b667f11b44d83a942e93cad1a70cf"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Data",
+                    "kuid": "de64826181cd4e3894ff864235073952",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 3,
+                    "propertyKey": "syncResultValue",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Sync Result",
+                        "srcWidget": "lblSyncResultVal",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "ee29277556854763843ace54671ec1ff"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Appearance",
+                    "kuid": "b35144d182d94f38b30e857ff70366f6",
+                    "originalPropertyKey": "isVisible",
+                    "propertyIndex": 3,
+                    "propertyKey": "showAWBPanel",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Show AWB",
+                        "srcWidget": "flxAWB",
+                        "type": "boolean",
+                        "uiRepresentation": "Label-Radiobuttongroup",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "g93ff2ce615141fda332e1c2219df38c"
+                }
+            ]
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.fedex.demo",
+    "version": "1.0.0"
+}

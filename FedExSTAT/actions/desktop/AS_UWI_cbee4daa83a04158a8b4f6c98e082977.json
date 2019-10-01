@@ -1,0 +1,28 @@
+{
+    "AS_UWI_cbee4daa83a04158a8b4f6c98e082977": {
+        "id": "AS_UWI_cbee4daa83a04158a8b4f6c98e082977",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmHome",
+            "type": "forms",
+            "platform": "",
+            "KUID": "i432b2c6062548b080b16513c33e219b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___b56046fd85b446edbf891b7d4b3fb1e4",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "fedexSTATScanInterfacePanel_btnScanOnClick",
+            "display": "fedexSTATScanInterfacePanel_btnScanOnClick",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }]
+    }
+}

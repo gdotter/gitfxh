@@ -1,0 +1,358 @@
+{
+    "classname": "STATScanInterfacePanel",
+    "definitions": {
+        "apis": {
+            "custom": [],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "e3260165b24f41b082514e053c726c99",
+                    "originalPropertyKey": "onClick",
+                    "propertyIndex": 1,
+                    "propertyKey": "btnScanOnClick",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "action",
+                        "displayName": "btnScanOnClick",
+                        "srcWidget": "btnScan",
+                        "type": "action",
+                        "uiRepresentation": "Label-Label-Button-Button",
+                        "wType": "Button"
+                    },
+                    "srcWgtKUID": "dda7b45108ac4b4bbb4428fd08d7018f"
+                }
+            ]
+        },
+        "groups": {
+            "apis": [],
+            "events": [],
+            "properties": [
+                "Button",
+                "ListBox"
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Read",
+                    "defaultValue": "",
+                    "group": "ListBox",
+                    "kuid": "gaf76ea9ddde485280869e5d5a285457",
+                    "originalPropertyKey": "selectedExceptionCode",
+                    "propertyIndex": 3,
+                    "propertyKey": "selectedExceptionCode",
+                    "pw": {
+                        "displayName": "Selected Exception Code",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "f1ac4df1a11d4d54b9be535a9db32f05",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "h13c4786560547dea109600bfae0aa77",
+                    "originalPropertyKey": "skin",
+                    "propertyIndex": 1,
+                    "propertyKey": "lblTitleSkin",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "skin",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Title Skin",
+                        "srcWidget": "lblTitleSTATScan",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "fe55c5db6688433aa4e6111f7e687e6a"
+                },
+                {
+                    "access": "Enable",
+                    "group": "ListBox",
+                    "kuid": "f74b383b10684d7487343259f0e9203e",
+                    "originalPropertyKey": "masterData",
+                    "propertyIndex": 1,
+                    "propertyKey": "masterData",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "widget",
+                        "companionKeys": [
+                            {
+                                "isVisible": false,
+                                "key": "selectedKey",
+                                "originalKey": "selectedKey"
+                            },
+                            {
+                                "isVisible": false,
+                                "key": "selectedKeys",
+                                "originalKey": "selectedKeys"
+                            }
+                        ],
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Master Data",
+                        "srcWidget": "lbExceptionCode",
+                        "type": "data",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "Masterdata-Groupwidget",
+                                "dataUpdaterId": "Masterdata-Groupwidget",
+                                "popupId": "Masterdata-Groupwidget",
+                                "type": "GroupWidgetMasterDataBtn"
+                            },
+                            "Label": {}
+                        },
+                        "uiRepresentation": "Label-Button",
+                        "wType": "ListBox"
+                    },
+                    "srcWgtKUID": "d191c7701614439182c6cb7e2ebc778a"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Button",
+                    "kuid": "d041de650aa4410e931f4b4fa29e292b",
+                    "originalPropertyKey": "toolTip",
+                    "propertyIndex": 1,
+                    "propertyKey": "btnScanToolTip",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "widget",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Tool Tip",
+                        "forkablePlatforms": {
+                            "desktop": [
+                                "desktopweb",
+                                "kiosk"
+                            ],
+                            "mobile": [],
+                            "tablet": []
+                        },
+                        "srcWidget": "btnScan",
+                        "supportedPlatforms": {
+                            "desktop": [
+                                "desktopweb",
+                                "kiosk"
+                            ]
+                        },
+                        "type": "string",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "Forked-Text",
+                                "dataUpdaterId": "Forked-Text",
+                                "popupId": "Forked-Text",
+                                "type": "ForkPopupBtn"
+                            },
+                            "Label": {},
+                            "Textbox": {}
+                        },
+                        "uiRepresentation": "Label-Textbox-Button",
+                        "wType": "Button"
+                    },
+                    "srcWgtKUID": "dda7b45108ac4b4bbb4428fd08d7018f"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "j5a8c68d592d4b84bf430ab004deb69b",
+                    "originalPropertyKey": "skin",
+                    "propertyIndex": 1,
+                    "propertyKey": "lbExceptionCodeSkin",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "skin",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Exception Code List Skin",
+                        "srcWidget": "lbExceptionCode",
+                        "wType": "ListBox"
+                    },
+                    "srcWgtKUID": "d191c7701614439182c6cb7e2ebc778a"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Button",
+                    "kuid": "d983aed88631410580a9c83747ddac2c",
+                    "originalPropertyKey": "enabled",
+                    "propertyIndex": 2,
+                    "propertyKey": "btnScanBlurEnabled",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "widget",
+                        "dependentKeysKUIDs": null,
+                        "dependentProps": [
+                            "value"
+                        ],
+                        "displayName": "Enable Blur",
+                        "originalParentKey": "blur",
+                        "parentKey": "blur1",
+                        "srcWidget": "btnScan",
+                        "type": "boolean",
+                        "uiRepresentation": "Label-Radiobuttongroup",
+                        "wType": "Button"
+                    },
+                    "srcWgtKUID": "dda7b45108ac4b4bbb4428fd08d7018f"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "ab6fd0e82332416a8448115db819fa54",
+                    "originalPropertyKey": "focusSkin",
+                    "propertyIndex": 2,
+                    "propertyKey": "lbExceptionCodeFocusSkin",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "skin",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Exception Code List Focus Skin",
+                        "srcWidget": "lbExceptionCode",
+                        "wType": "ListBox"
+                    },
+                    "srcWgtKUID": "d191c7701614439182c6cb7e2ebc778a"
+                },
+                {
+                    "access": "Enable",
+                    "group": "ListBox",
+                    "kuid": "f2be445645f942efab488096b1ec4de5",
+                    "originalPropertyKey": "enabled",
+                    "propertyIndex": 2,
+                    "propertyKey": "lbBlurEnabled",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "widget",
+                        "dependentKeysKUIDs": null,
+                        "dependentProps": [
+                            "value"
+                        ],
+                        "displayName": "Enable Blur",
+                        "originalParentKey": "blur",
+                        "parentKey": "blur",
+                        "srcWidget": "lbExceptionCode",
+                        "type": "boolean",
+                        "uiRepresentation": "Label-Radiobuttongroup",
+                        "wType": "ListBox"
+                    },
+                    "srcWgtKUID": "d191c7701614439182c6cb7e2ebc778a"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "fbce9400f6ad4828a0c6a57981a2e6ad",
+                    "originalPropertyKey": "skin",
+                    "propertyIndex": 3,
+                    "propertyKey": "btnScanSkin",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "skin",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Scan Button Skin",
+                        "srcWidget": "btnScan",
+                        "wType": "Button"
+                    },
+                    "srcWgtKUID": "dda7b45108ac4b4bbb4428fd08d7018f"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Button",
+                    "kuid": "b11bfe9d682549bdaffd5fe727dd0801",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 3,
+                    "propertyKey": "btnScanText",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Scan Button Text",
+                        "srcWidget": "btnScan",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Button"
+                    },
+                    "srcWgtKUID": "dda7b45108ac4b4bbb4428fd08d7018f"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "d7340962017d43b599fca979e9692e27",
+                    "originalPropertyKey": "focusSkin",
+                    "propertyIndex": 4,
+                    "propertyKey": "btnScanFocusSkin",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "skin",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Scan Button Focus Skin",
+                        "srcWidget": "btnScan",
+                        "wType": "Button"
+                    },
+                    "srcWgtKUID": "dda7b45108ac4b4bbb4428fd08d7018f"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "dec86c6739cc4d73a2f1989fd5057d43",
+                    "originalPropertyKey": "skin",
+                    "propertyIndex": 5,
+                    "propertyKey": "lblSelectedSkin",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "skin",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Selected Value Skin",
+                        "srcWidget": "lblSelected",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "b29d0bd88b2a4981aab5829e23d604a0"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "dabef47f47a84cc9a78e2799c32acffa",
+                    "originalPropertyKey": "skin",
+                    "propertyIndex": 7,
+                    "propertyKey": "flxSelectedSkin",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "skin",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Selected Value Background Skin",
+                        "srcWidget": "flxSelectedScan",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "haf82dbae76648e2a81e834cec654b7c"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "g6f4902f8d6d47e58bbec7f69dd2aa2d",
+                    "originalPropertyKey": "isVisible",
+                    "propertyIndex": 8,
+                    "propertyKey": "isScanEnabled",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Scan Enabled",
+                        "srcWidget": "btnScan",
+                        "toolTip": "Hides/shows the widget in the screen",
+                        "type": "boolean",
+                        "uiRepresentation": "Label-Radiobuttongroup",
+                        "wType": "Button"
+                    },
+                    "srcWgtKUID": "dda7b45108ac4b4bbb4428fd08d7018f"
+                }
+            ]
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.fedex.demo",
+    "version": "1.0.0"
+}
